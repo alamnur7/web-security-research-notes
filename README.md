@@ -53,7 +53,13 @@ All research and documentation within this repository adhere to standard cyberse
 - Penetration Testers: Testing methodology insights and manual verification approaches.
 - Software Developers: Secure coding practices and mitigation patterns for backend services.
 ---
+### 1. OWASP API Security Top 10 
+* **[Broken Object Level Authorization (BOLA / IDOR)](./owasp-top-10/broken-object-level-authorization/bola-id-enumeration-case.md)** — Analysis of missing ownership validation on REST API parameters with Mermaid sequence flow. 
 
+### 2. OWASP Top 10 Client-Side & Injection Security 
+ * **[Stored DOM-Based Cross-Site Scripting (XSS)](./owasp-top-10/cross-site-scripting/stored-dom-xss-case.md)** — Analysis of unsafe DOM sinks, payload persistence, and client-side sanitization strategies. 
+--- 
+*Maintained for continuous technical growth and AppSec methodology tracking.*
 
 ## Legal and Ethical Disclaimer
 
