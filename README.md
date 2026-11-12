@@ -1,58 +1,67 @@
-# Hi, I'm Nur Alam 
-### Application Security Engineer | Security Researcher & Developer
+# Web Security Research and Technical Notes
 
 
-I bridge the gap between software development and security. With a strong background in software engineering (**Java Spring Boot, Flutter, Python**) and active experience in offensive security & bug hunting, I specialize in building secure-by-design architectures, conducting deep vulnerability research, and automating security controls within modern CI/CD pipelines.
-
-
----
-
-
-## Core Focus & Technical Expertise
-
-
-* **Application & API Security:** OWASP Top 10, OWASP API Security Top 10, Secure Code Review, Root-Cause Analysis, Remediation Engineering.
-* **Secure Architecture & Engineering:** Secure API Design, Authentication & Authorization Hardening (JWT/OAuth2), PII Protection, Defensive Design Patterns.
-* **DevSecOps & Security Automation:** SAST/SCA/Secret Scanning Integration, Automated Reconnaissance Workflows, CI/CD Pipeline Hardening.
-* **Offensive Security Intuition:** Web/API Penetration Testing, Client-side Reverse Engineering, Vulnerability Research & Responsible Disclosure.
----
-
-
-## Featured Application Security Repositories
-
-
-Here is a curated collection of my work demonstrating secure coding, security automation, and in-depth vulnerability research:
-
-
-### 1. [secure-api-architecture-blueprint](https://github.com/alamnur7/secure-api-architecture-blueprint)
-**Focus:** Secure-by-Design Architecture & Remediation Patterns
-Reference implementations for secure REST API patterns using **Java Spring Boot** and **Flutter**.
-Architectural security flows modeled using **Mermaid.js** (Authentication, Authorization, Rate Limiting, Input Sanitization).
-Concrete code-level fixes and defensive coding patterns mapped to common OWASP vulnerabilities.
-### 2. [security-recon-toolkit](https://github.com/alamnur7/security-recon-toolkit)
-**Focus:** Security Automation & Reconnaissance Pipeline
-Modular automation scripts built with **Bash** for passive asset discovery, HTTP verification, and endpoint harvesting.
-Structured workspace architecture designed for resource efficiency and seamless downstream integration into testing tools (ffuf, nuclei, Burp Suite).
-### 3. [web-security-research-notes](https://github.com/alamnur7/web-security-research-notes)
-**Focus:** Vulnerability Analysis, Root-Cause Dissection & Remediation
-Comprehensive security research write-ups analyzing real-world vulnerability classes (BOLA/IDOR, Stored DOM-XSS, etc.).
-Detailed attack chain sequence diagrams (**Mermaid.js**), HTTP PoC requests, root-cause analyses, and concrete server/client-side remediation code.
-
-
-## AppSec Toolstack & Technologies
-
-
-| Category | Tools & Technologies |
-| :--- | :--- |
-| **Development & Scripting** | Java (Spring Boot), Dart (Flutter), Python, JavaScript, Bash |
-| **Databases & Environments** | PostgreSQL, MySQL, Docker, Linux (Kali/Ubuntu), Git |
-| **SAST, SCA & Secret Scanning** | Semgrep, SonarQube, Dependabot, TruffleHog / Gitleaks |
-| **DAST, API Testing & Recon** | Burp Suite Pro, Subfinder, Httpx, Katana, Nuclei, Ffuf, Postman |
-| **DevSecOps & Workflow** | GitHub Actions, Git, Threat Modeling, Jira |
+A structured repository containing technical write-ups, vulnerability breakdown notes, and remediation methodologies for web application and API security vulnerabilities. This repository serves as a knowledge base and practical reference based on real-world security research and international standards such as OWASP Top 10 and OWASP API Security Top 10.
 
 
 ---
 
 
-## Connect with Me
-**GitHub:** [github.com/alamnur7](https://github.com/alamnur7)
+## Core Focus Areas
+
+
+- Broken Object Level Authorization (BOLA / IDOR): Deep dive into access control flaws, object privilege validation, and mitigation techniques.
+- Web Application Vulnerabilities: Practical analysis of Cross-Site Scripting (XSS), SQL Injection, Server-Side Request Forgery (SSRF), and Cross-Site Request Forgery (CSRF).
+- API Security Assessment: Methodology for mapping REST APIs, auditing authentication mechanisms, and testing parameter handling.
+- Remediation Advisory: Technical mitigation guidance written for software engineering teams to fix root causes effectively.
+
+---
+
+## Repository Structure
+
+
+| Directory / Category | Content Description | Key Focus |
+|---|---|---|
+| owasp-top-10/ | Analysis of core web application vulnerability classes | Technical impact, PoC logic, remediation |
+| api-security/ | Breakdown of API-specific security misconfigurations | Authorization, rate limiting, data exposure |
+| remediation-guides/ | Developer-oriented fix documentation | Secure coding, architecture adjustments |
+| research-writeups/ | Anonymized case studies and vulnerability write-ups | Methodology, discovery flow, proof of concept |
+
+
+---
+
+
+## Methodology and Framework
+
+
+All research and documentation within this repository adhere to standard cybersecurity assessment frameworks:
+
+
+1. Identification: Systematic asset discovery and endpoint mapping.
+2. Verification: Manual proof-of-concept creation to validate vulnerability presence and rule out false positives.
+3. Impact Assessment: Evaluating business logic risks and technical exposure levels.
+4. Remediation Guidance: Formulating actionable developer instructions to patch the issue securely.
+
+
+---
+
+
+## Target Audience
+
+
+- Application Security Engineers: Reference material for vulnerability classification and mitigation validation.
+- Penetration Testers: Testing methodology insights and manual verification approaches.
+- Software Developers: Secure coding practices and mitigation patterns for backend services.
+---
+### 1. OWASP API Security Top 10 
+* **[Broken Object Level Authorization (BOLA / IDOR)](./owasp-top-10/broken-object-level-authorization/bola-id-enumeration-case.md)** — Analysis of missing ownership validation on REST API parameters with Mermaid sequence flow. 
+
+### 2. OWASP Top 10 Client-Side & Injection Security 
+ * **[Stored DOM-Based Cross-Site Scripting (XSS)](./owasp-top-10/cross-site-scripting/stored-dom-xss-case.md)** — Analysis of unsafe DOM sinks, payload persistence, and client-side sanitization strategies. 
+--- 
+*Maintained for continuous technical growth and AppSec methodology tracking.*
+
+## Legal and Ethical Disclaimer
+
+
+All research notes and case studies in this repository are created strictly for educational purposes, authorized security evaluations, and defensive engineering. No proprietary code or confidential client data is published. Unauthorized testing against target environments without explicit authorization is illegal.
